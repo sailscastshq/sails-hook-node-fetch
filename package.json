@@ -1,6 +1,6 @@
 {
   "name": "@sailscasts/sails-hook-node-fetch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Exposes the node-fetch module as a built-in helper in your Sails app.",
   "main": "lib/index.js",
   "scripts": {
