@@ -1,0 +1,43 @@
+{
+  "name": "sails-hook-node-fetch",
+  "version": "0.0.1",
+  "description": "Exposes the node-fetch module as built-in helpers in your Sails app.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint && npm run custom-tests",
+    "custom-tests": "node ./node_modules/mocha/bin/mocha && echo \"Custom tests all passed.\" && echo",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailscasts/sails-hook-node-fetch.git"
+  },
+  "keywords": [
+    "sails",
+    "node-fetch",
+    "fetch",
+    "network",
+    "http"
+  ],
+  "author": "Kelvin Omereshone <kelvinomereshone@gmail.com> (https://twitter.com/dominus_kelvin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sailscasts/sails-hook-node-fetch/issues"
+  },
+  "homepage": "https://github.com/sailscasts/sails-hook-node-fetch#readme",
+  "sails": {
+    "isHook": true,
+    "hookName": "node-fetch"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "mocha": "^8.2.0",
+    "sails": "^1.4.0"
+  }
+}
